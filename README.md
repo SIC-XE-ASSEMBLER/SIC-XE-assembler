@@ -5,13 +5,13 @@ This project is a **two-pass assembler for SIC/XE architecture**, implemented in
 
 ---
 
-## Project Members
+## - Project Members
 
 [Mohamed Ahmed](https://github.com/mohamed-tageldeen)
 [Farah Mahmoud](https://github.com/farah-mahmoudx)
 
 
-##  Features
+##  - Features
 
 - Cleans and tokenizes raw assembly input.
 - Performs **Pass 1** to compute location counters and build a symbol table.
@@ -20,9 +20,9 @@ This project is a **two-pass assembler for SIC/XE architecture**, implemented in
 
 ---
 
-## Assembler Workflow
+## - Assembler Workflow
 
-### Input Preprocessing
+### - Input Preprocessing
 
 - Input: A plain `.txt` file containing the SIC/XE assembly program.
 - Strips comments and whitespace.
@@ -30,7 +30,7 @@ This project is a **two-pass assembler for SIC/XE architecture**, implemented in
 - Output files:
    - `intermediate.txt` – Tokenized (cleaned) version of the input.
 
-### Pass 1 – Location Counter & Symbol Table
+### - Pass 1 – Location Counter & Symbol Table
 
 - Computes address (`location counter`) for each instruction.
 - Builds a **symbol table** for label-address mapping.
@@ -38,7 +38,7 @@ This project is a **two-pass assembler for SIC/XE architecture**, implemented in
   - `symbol_table.txt` – Label to address mapping.
   - `output_pass1.txt` – Location counter results.
 
-### Pass 2 – Object Code & HTME Record Generation
+### - Pass 2 – Object Code & HTME Record Generation
 
 - Uses intermediate and symbol table files.
 - Translates instructions into **object code**.
@@ -53,7 +53,7 @@ This project is a **two-pass assembler for SIC/XE architecture**, implemented in
 
 ---
 
-## How to Run the Assembler
+## - How to Run the Assembler
 
 1. Place your input assembly program in a plain text file (e.g., `input.txt`).
 2. Ensure that `input.txt` is in the **same directory** as the Python script (`assembler.py`).
